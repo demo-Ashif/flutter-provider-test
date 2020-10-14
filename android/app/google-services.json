@@ -1,0 +1,64 @@
+{
+  "project_info": {
+    "project_number": "43003974765",
+    "firebase_url": "https://footsapp-ltd.firebaseio.com",
+    "project_id": "footsapp-ltd",
+    "storage_bucket": "footsapp-ltd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:43003974765:android:d224a38c036fee3a061b64",
+        "android_client_info": {
+          "package_name": "foots.footsapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "43003974765-gca7qg2jcvfkvpjjmq5cgo3njoffdv6q.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "foots.footsapp",
+            "certificate_hash": "63973a5607b6aae85f775a6d580df29547711187"
+          }
+        },
+        {
+          "client_id": "43003974765-cbeg3ntulo2kvfo15jlt56n8a1uvjdpp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "foots.footsapp",
+            "certificate_hash": "78608c3d40bce76c402c667145fbd7f1bf58642f"
+          }
+        },
+        {
+          "client_id": "43003974765-tvo8chq00d6shl3lemjsfv7l1qpcorqt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDEFaWAVclyY5tklpiGNoDNnaW9BZtbT9U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "43003974765-tvo8chq00d6shl3lemjsfv7l1qpcorqt.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "43003974765-38cl3sub71l1vl9dgnnallvrng3tea8d.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.goideotic.footsapp",
+                "app_store_id": "1469878266"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
