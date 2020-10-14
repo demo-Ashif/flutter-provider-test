@@ -32,7 +32,13 @@ class _NonSocialRegScreenState extends State<NonSocialRegScreen> {
   @override
   void initState() {
     super.initState();
-    sw = ScreenAwareSize(context);
+    // sw = ScreenAwareSize(context);
+  }
+
+  @override
+  void didChangeDependencies() {
+    super.didChangeDependencies();
+    sw ??= ScreenAwareSize(context);
   }
 
   @override

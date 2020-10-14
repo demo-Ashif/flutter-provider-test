@@ -8,8 +8,7 @@ import 'package:footsapp/features/user_profile/screens/user_profile_screen.dart'
 import 'package:provider/provider.dart';
 import 'package:transparent_image/transparent_image.dart';
 
-import 'file:///D:/FootsappProject/footsapp-v2/lib/features/user_profile/screens/profile_page_dummy.dart';
-
+import '../../user_profile/screens/profile_page_dummy.dart';
 import '../widgets/custom_fab.dart';
 import 'bottom_nav_items_holder.dart';
 import 'bottom_nav_page_holder.dart';

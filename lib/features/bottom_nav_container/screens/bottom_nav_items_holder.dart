@@ -4,6 +4,7 @@ import 'package:footsapp/common_ui/color_theme.dart';
 import 'package:footsapp/core/constants/value_constants.dart';
 import 'package:footsapp/core/utils/screen_aware_size.dart';
 
+import '../../../core/utils/screen_aware_size.dart';
 import '../widgets/bottom_nav_item.dart';
 
 class BottomNavItemsHolder extends StatefulWidget {
@@ -37,7 +38,13 @@ class _BottomNavItemsHolderState extends State<BottomNavItemsHolder> {
   @override
   void initState() {
     super.initState();
-    sw = ScreenAwareSize(context);
+    // sw = ScreenAwareSize(context);
+  }
+
+  @override
+  void didChangeDependencies() {
+    super.didChangeDependencies();
+    sw ??= ScreenAwareSize(context);
   }
 
   @override

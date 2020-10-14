@@ -15,6 +15,8 @@ import 'package:footsapp/features/auth_user/screens/social_login_reg_screen.dart
 import 'package:footsapp/features/bottom_nav_container/screens/bottom_nav_container.dart';
 import 'package:transparent_image/transparent_image.dart';
 
+import '../../../core/utils/screen_aware_size.dart';
+
 class SplashView extends StatefulWidget {
   static const String SCREEN_ID = 'splash_view_screen';
 
@@ -55,7 +57,13 @@ class _SplashViewState extends State<SplashView>
   @override
   void initState() {
     super.initState();
-    sw = ScreenAwareSize(context);
+    // sw = ScreenAwareSize(context);
+  }
+
+  @override
+  void didChangeDependencies() {
+    super.didChangeDependencies();
+    sw ??= ScreenAwareSize(context);
   }
 
   void getProfileInfo() async {

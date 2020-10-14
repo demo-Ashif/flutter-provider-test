@@ -8,6 +8,8 @@ import 'package:footsapp/core/di/injection_container.dart';
 import 'package:footsapp/core/utils/screen_aware_size.dart';
 import 'package:footsapp/core/view_models/bottom_nav_viewmodel.dart';
 
+import '../../../core/utils/screen_aware_size.dart';
+
 class CustomFab extends StatefulWidget {
   @override
   _CustomFabState createState() => _CustomFabState();
@@ -21,7 +23,13 @@ class _CustomFabState extends State<CustomFab> {
   @override
   void initState() {
     super.initState();
-    sw = ScreenAwareSize(context);
+    // sw = ScreenAwareSize(context);
+  }
+
+  @override
+  void didChangeDependencies() {
+    super.didChangeDependencies();
+    sw ??= ScreenAwareSize(context);
   }
 
   @override

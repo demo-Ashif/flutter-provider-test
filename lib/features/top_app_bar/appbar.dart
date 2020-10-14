@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:footsapp/common_ui/color_theme.dart';
 import 'package:footsapp/core/utils/screen_aware_size.dart';
 
+import '../../core/utils/screen_aware_size.dart';
+
 class MyAppBar extends StatefulWidget {
   const MyAppBar({
     Key key,
@@ -18,11 +20,22 @@ class _MyAppBarState extends State<MyAppBar> {
   @override
   void initState() {
     super.initState();
-    sw = ScreenAwareSize(context);
+    print("initState() in AppBar");
+    // sw = ScreenAwareSize(context);
+  }
+
+  @override
+  void didChangeDependencies() {
+    super.didChangeDependencies();
+    print("didChangeDependencies() in AppBar");
+    // sw ??= ScreenAwareSize(context);
   }
 
   @override
   Widget build(BuildContext ctx) {
+    print("build() in AppBar");
+    // Using the fresh context everytime.
+    sw = ScreenAwareSize(context);
     final _iconSize = sw.sHeight(19);
     return Container(
       margin: const EdgeInsets.only(top: 10.0, bottom: 12.0),

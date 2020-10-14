@@ -13,6 +13,8 @@ import 'package:footsapp/features/auth_user/widgets/segmented_control_pref_foot.
 import 'package:footsapp/features/bottom_nav_container/screens/bottom_nav_container.dart';
 import 'package:provider/provider.dart';
 
+import '../../../core/utils/screen_aware_size.dart';
+
 class SecondProfileSetupScreen extends StatefulWidget {
   static const String SCREEN_ID = 'second_profile_setup_screen';
 
@@ -34,7 +36,7 @@ class _SecondProfileSetupScreenState extends State<SecondProfileSetupScreen> {
   @override
   void initState() {
     super.initState();
-    sw = ScreenAwareSize(context);
+    // sw = ScreenAwareSize(context);
     // profileViewModel.isShowLoading.listen((bool value) {
     //   print(value);
     //   if (value == true) {
@@ -43,6 +45,12 @@ class _SecondProfileSetupScreenState extends State<SecondProfileSetupScreen> {
     //     Navigator.of(_keyLoader.currentContext, rootNavigator: true).pop();
     //   }
     // });
+  }
+
+  @override
+  void didChangeDependencies() {
+    super.didChangeDependencies();
+    sw ??= ScreenAwareSize(context);
   }
 
   @override

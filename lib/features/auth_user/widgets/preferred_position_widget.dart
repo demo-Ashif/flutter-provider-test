@@ -4,6 +4,7 @@ import 'package:footsapp/core/constants/value_constants.dart';
 import 'package:footsapp/core/utils/screen_aware_size.dart';
 import 'package:footsapp/features/auth_user/widgets/pitch_painter.dart';
 
+import '../../../core/utils/screen_aware_size.dart';
 import 'field_position_dot.dart';
 import 'field_position_text.dart';
 
@@ -23,7 +24,13 @@ class _PreferredPositionWidgetState extends State<PreferredPositionWidget> {
   @override
   void initState() {
     super.initState();
-    sw = ScreenAwareSize(context);
+    // sw = ScreenAwareSize(context);
+  }
+
+  @override
+  void didChangeDependencies() {
+    super.didChangeDependencies();
+    sw ??= ScreenAwareSize(context);
   }
 
   @override
